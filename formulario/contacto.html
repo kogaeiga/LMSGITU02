@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+	<head>
+		<meta charset="UTF-8">
+		<title>Formulario Registro</title>
+		<link rel="icon" href="imagenes/Imagen01.gif" type="image/gif" sizes="16x16">
+	</head>
+	<body>
+		<h1>Registrate y elige la ruta y el día que prefieras</h1>
+		<form action="https://example.com/procesar-formulario" method="post">
+			<!-- Contacto -->
+			<fieldset>
+				<legend>Información de Contacto</legend>
+				<label for="nombre">Nombre:</label>
+				<input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required><br><br>
+				<label for="apellido1">Primer Apellido:</label>
+				<input type="text" id="apellido1" name="apellido1" placeholder="Tu primer apellido" required><br><br>
+				<label for="apellido2">Segundo Apellido:</label>
+				<input type="text" id="apellido2" name="apellido2" placeholder="Tu segundo apellido" required><br><br>
+				<label for="federado">¿Estás federado?</label>
+				<select id="federado" name="federado">
+				<option value="si">SI</option>
+				<option value="no">NO</option>
+				</select><br><br>
+				<label for="email">Correo electrónico:</label>
+				<input type="email" id="email" name="email" placeholder="tuemail@dominio.com" required><br><br>
+			</fieldset>
+			<!-- Seleccionar fecha para realizar la ruta -->
+			<fieldset>
+				<legend>Elegir día para hacer la ruta</legend>
+				<label for="fecha">Fecha de la excursión:</label>
+				<input type="date" id="fecha" name="fecha_reserva" required><br><br>
+				<label for="rutas">Seleccionar ruta:</label>
+				<select id="rutas" name="rutas">
+				<option value="rutalarga">Pico Peiro</option>
+				<option value="rutamedia">Tozal Guara</option>
+				<option value="rutacorta">Pico Moncayo</option>
+				</select><br><br>
+			</fieldset>
+			<!-- Información adicional -->
+			<fieldset>
+				<legend>Información Adicional</legend>
+				<label for="comentarios">Comentarios:</label>
+				<textarea id="comentarios" name="comentarios" placeholder="Escribe tus comentarios aquí..."></textarea><br><br>
+			</fieldset>
+			<!-- Botones -->
+			<button type="submit">Enviar</button>
+			<button type="reset">Reiniciar</button>
+		</form>
+		<footer>
+			<hr>
+			<p><strong>Autor:</strong> Daniel Anadón Zuara</p>
+			<p><strong>Fecha:</strong> 19 de noviembre de 2024</p>
+		</footer>
+	</body>
+</html>
